@@ -1,5 +1,16 @@
 # V-JEPA: Video Joint Embedding Predictive Architecture
 
+```bash
+# build docker image
+...
+# conda init
+# conda create -n jepa python-3.9 -y
+# conda install ...
+cd jepa
+python setup.py install
+```
+
+----------
 Official PyTorch codebase for the _video joint-embedding predictive architecture_, V-JEPA, a method for self-supervised learning of visual representations from video.
 
 **[Meta AI Research, FAIR](https://ai.facebook.com/research/)**

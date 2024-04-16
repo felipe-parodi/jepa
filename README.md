@@ -2,6 +2,8 @@
 
 ```bash
 # build docker image
+git clone https://github.com/felipe-parodi/jepa.git
+cd jepa
 podman build -t jepa .
 podman run -d -it --gpus all -v /home/fparodi:/home/fparodi my_pytorch_app:latest /bin/bash
 tmux
@@ -9,7 +11,6 @@ podman exec -it 8e1 /bin/bash
 conda init
 conda create -n jepa python-3.9 -y
 conda install ... # pytorch as needed
-cd jepa
 python setup.py install
 ```
 
